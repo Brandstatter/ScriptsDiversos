@@ -89,7 +89,6 @@ async def termo(ctx):
               resp[y] = ':red_square: '
       #Novo problema: Quando uma palavra tem duas letras iguais e o player acerta o uma das letras mas erra a posição da outra letra igual o bot coloca a então letra amarela como uma letra vermelha.
       
-
       print(listGreen)
       print(listYellow)
       num = num + 1
