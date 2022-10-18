@@ -10,4 +10,4 @@
 55 dim Dta
 60 Dta = (B*B) - (4*A*C)
 65 print Dta
-70 if Dta < 0 then print Dta + 40
+70 if Dta < 0 then print "Não existe solução real"
