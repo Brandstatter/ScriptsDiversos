@@ -6,8 +6,8 @@ from palavras import palavras
 from discord.ext import commands
 
 activity = discord.Game(name="&help")
-
-client = commands.Bot(command_prefix = "&", case_insensitive = True, activity=activity, status=discord.Status.idle)
+intents = discord.Intents.all()
+client = commands.Bot(command_prefix = "&", case_insensitive = True, activity=activity, status=discord.Status.idle, intents=intents)
 
 client.remove_command("help")
 
@@ -111,4 +111,4 @@ async def termo(ctx):
     await ctx.send(answer)
 
 
-client.run('token')
+client.run('OTYwMzkwMjEyNDMxODAyNDA5.GR_rKL.0BUHMiHvVqVHjpUKImbER1SatORVeISVsQfB8Q')
