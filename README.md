@@ -3,3 +3,5 @@ Como trabalhos da faculdade e scripts de teste.
 
 Scripts existentes nesse repositorio contam com:
 Discord Bot - com o jogo Termo
+Paradigmas de Programação 
+Algoritmo de Kruskal em Python
