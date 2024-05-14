@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="contato.css">
+        <title>Contato</title>
+    </head>
+
+    <body>
+        <main>
+            <h2>Formulário de Contato</h2>
+            <form action="">
+                <label for="nome">Nome Completo:</label><br>
+                <input type="text" id="nome" name="nome"><br>
+                <label for="email">Endereço de Email:</label><br>
+                <input type="email" id="email" name="email"><br>
+                <label for="assunto">Assunto:</label>
+                <select id="assunto" name="assunto">
+                    <option value="">Escolha o assunto</option>
+                    <option value="pergunta">Pergunta</option>
+                    <option value="feedback">Feedback</option>
+                    <option value="info">Informação</option>
+                </select><br>
+                <label for="messagem">Mensagem:</label><br>
+                <textarea id="messagem" name="messagem"></textarea><br>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Desejo receber a newsletter</label><br>
+                <input type="submit" value="Enviar">
+            </form>
+        </main>
+    </body>
+</html>
