@@ -2,9 +2,9 @@
 #include <iostream>
 using namespace std;
 
-int f(int &batatinha, int &y)
+int f(int &teste, int &y)
 {
-	batatinha=1;
+	teste=1;
 	y=1;
 	return x+y;
 }

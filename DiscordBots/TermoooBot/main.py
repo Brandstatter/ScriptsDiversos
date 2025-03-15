@@ -2,14 +2,21 @@ import discord
 import asyncio
 import random
 import unidecode
+import os
 from palavras import palavras
 from discord.ext import commands
+from dotenv import load_dotenv
 
 activity = discord.Game(name="&help")
 intents = discord.Intents.all()
 client = commands.Bot(command_prefix = "&", case_insensitive = True, activity=activity, status=discord.Status.idle, intents=intents)
 
 client.remove_command("help")
+
+def configure():
+    load_dotenv()
+
+configure()
 
 # Comando de ajuda
 @client.command()
@@ -94,10 +101,10 @@ async def termo(ctx):
       num = num + 1
       turn = turn + 1
     elif realmsg == '&termo':
-      answer = 'Haha sua bobinha! Agora vamos parar com a putaria e jogar serio, vamos?'
+      answer = 'Complete o jogo atual.'
       turn = 100
     else:
-      answer = 'A palavra precisa ter 5 letras seu merdinha'
+      answer = 'A palavra precisa ter 5 letras.'
 
     # Transforma resposta em string
     answer = ''.join(resp)
@@ -111,4 +118,4 @@ async def termo(ctx):
     await ctx.send(answer)
 
 
-client.run('OTYwMzkwMjEyNDMxODAyNDA5.GR_rKL.0BUHMiHvVqVHjpUKImbER1SatORVeISVsQfB8Q')
+client.run(os.getenv('clientID'))
